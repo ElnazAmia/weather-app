@@ -46,8 +46,8 @@ input #input-text-search {
 .col-6,
 .col-4,
 .col.different-time,
-.col-7,
-.col-5,
+.col-lg-7,
+.col-lg-5,
 .col-12,
 .col-lg-4 {
   border: 1px solid lightgray;
