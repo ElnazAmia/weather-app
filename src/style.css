@@ -68,3 +68,6 @@ input #input-text-search {
 .col-12-weekday {
   font-size: 22px;
 }
+a {
+  text-decoration: none;
+}
