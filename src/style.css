@@ -6,25 +6,12 @@
   width: 50%;
 }
 
-.weather-app-container {
-  margin: 20px 0;
-  max-width: 630px;
-  padding: 20px 16px 24px 16px;
-}
-.btn {
-  border-radius: 2px;
-  color: #fff;
-  height: 44px;
-}
+input #input-text-search {
+  padding: 4px;
 
-#search-text-input {
-  border-radius: 2px;
-  border: none;
-  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16), 0 0 0 1px rgba(0, 0, 0, 0.08);
-  height: 44px;
-  outline: 0;
-  padding: 10px;
-  width: 190px;
+  margin-right: 10px;
+  border-radius: 4px;
+  width: 100%;
 }
 #form-container {
   display: flex;
@@ -59,8 +46,8 @@
 .col-6,
 .col-4,
 .col.different-time,
-.col-lg-8,
-.col-lg-4,
+.col-lg-7,
+.col-lg-5,
 .col-12,
 .col-lg-4 {
   border: 1px solid lightgray;
@@ -80,7 +67,4 @@
 }
 .col-12-weekday {
   font-size: 22px;
-}
-a {
-  text-decoration: none;
 }
