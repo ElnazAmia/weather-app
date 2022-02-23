@@ -1,11 +1,9 @@
 * {
   font-family: "Josefin Sans", sans-serif;
 }
-.container {
-  margin: 50px auto;
-  width: 50%;
+body {
+  background-color: #f9f7fe;
 }
-
 input #input-text-search {
   padding: 4px;
 
@@ -13,61 +11,122 @@ input #input-text-search {
   border-radius: 4px;
   width: 100%;
 }
-#form-container {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
+h1 {
+  color: #878787;
+  font-size: 32px;
+  font-weight: bold;
+  line-height: 36px;
+  margin-bottom: 0;
+  margin-top: 20px;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  color: rgb(135, 135, 135);
+  font-size: 24px;
+  font-weight: 100;
+  line-height: 29px;
+}
+li:first-letter {
+  text-transform: capitalize;
+}
+.weather-description {
+  margin-top: -45px;
+}
+#footer {
+  display: block;
+  text-align: center;
+}
+#temperature {
+  font-size: 88px;
+}
+.container {
+  margin: 50px auto;
+  width: 50%;
+}
+.wrapper {
+  margin: 30px auto;
+}
+.units {
+  position: relative;
+  top: 26px;
+  left: 8px;
+  font-size: 20px;
 }
 
 #Celsius,
 #Fahrenheit {
   text-decoration: none;
 }
-
+#icon {
+  position: relative;
+  top: 10px;
+  left: 10px;
+  justify-content: center;
+  height: 180px;
+  width: 180px;
+}
+#description {
+  font-size: 24px;
+  text-align: center;
+  margin-top: 0;
+}
+#description:first-letter {
+  text-transform: capitalize;
+}
 .today {
   text-align: center;
   margin-top: 30px;
   font-size: 25px;
 }
+.weather-temp .active {
+  color: black;
+  cursor: default;
+}
+.weather-temp .active:hover {
+  text-decoration: none;
+}
+
 #degrees {
   font-size: 38px;
 }
-.rightside {
-  font-size: 25px;
-  text-align: center;
-}
+
 .cloudy-sun {
   margin-top: 15px;
   font-size: 40px;
 }
 
-.col-6,
-.col-4,
-.col.different-time,
-.col-lg-7,
-.col-lg-5,
-.col-12,
-.col-lg-4 {
+.first-box,
+.second-box,
+.third-box {
   border: 1px solid lightgray;
   padding: 15px;
-  text-align: center;
+  /* text-align: center; */
+  margin: 20px;
+  border-radius: 5px;
+  background-color: #ffffff;
 }
+
 #form-input {
   border: none;
 }
-
+#search-details {
+  margin-top: 30px;
+}
 .col.time {
   border: none;
 }
-.time-before,
-.time-after {
-  font-size: 25px;
-}
+
 .col-12-weekday {
   font-size: 22px;
 }
+
 a {
   text-decoration: none;
 }

@@ -21,12 +21,12 @@
   </head>
   <body>
     <div class="container">
-      <div class="weather-app">
-        <div class="row">
-          <div class="col-lg-7">
+      <div class="wrapper">
+        <div class="weather-app">
+          <div class="row first-box">
             <form class="search-form" id="search-city-form">
               <div class="row" id="form-container">
-                <div class="col-6" id="form-input">
+                <div class="col-lg-6" id="form-input">
                   <input
                     type="search"
                     placeholder="Type a city.."
@@ -36,6 +36,7 @@
                     class="form-control shadow-sm"
                   />
                 </div>
+
                 <div class="col-lg-3">
                   <input
                     type="submit"
@@ -48,119 +49,52 @@
                     class="btn btn-success w-100"
                     id="current-location-button"
                   >
-                    Current
+                    Current location
                   </button>
                 </div>
               </div>
             </form>
-            <div class="today">
-              <span class="icon calender"> 📅 </span>
-              <span class="current-day">Tuesday</span>
-              <div class="current-time">11:00</div>
-            </div>
-          </div>
-          <div class="col-lg-5 rightside">
-            <div class="icon cloudy-sun">
-              <span id="searchedCity"></span> ⛅
-            </div>
-            <div class="current-temp">
-              <span id="degrees"></span>
-              <a href="#" id="Celsius"><sup>℃</sup></a
-              ><sup>|</sup><a href="#" id="Fahrenheit"><sup>℉</sup></a>
-            </div>
-            <div id="description"></div>
-          </div>
-          <div class="col-12 different-time">
-            <div class="row">
-              <div class="col time-before"><</div>
-              <div class="col time">
-                <div>12.00</div>
-                <div>🌥</div>
+            <div class="row d-flex justify-content-between" id="search-details">
+              <div class="col-4 overview" id="leftbar-info">
+                <h1 id="searchedCity"></h1>
+                <ul>
+                  <li><span id="date"></span></li>
+                  <li>humidity:<span id="humidity"></span>%</li>
+                  <li>wind:<span id="wind"></span> km/h</li>
+                </ul>
               </div>
-              <div class="col time">
-                <div>13.00</div>
-                <div>🌥</div>
+              <div
+                class="col-4 d-flex justify-content-center flex-column weather-description"
+              >
+                <img
+                  src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
+                  alt=""
+                  id="icon"
+                  class=""
+                />
+                <div class="" id="description"></div>
               </div>
-              <div class="col time">
-                <div>14.00</div>
-                <div>🌥</div>
-              </div>
-              <div class="col time">
-                <div>15.00</div>
-                <div>🌥</div>
-              </div>
-              <div class="col time">
-                <div>16.00</div>
-                <div>🌥</div>
-              </div>
-              <div class="col time-after">></div>
-            </div>
-          </div>
-        </div>
-        <div class="row next-days">
-          <div class="col-lg-4">
-            <div class="row">
-              <div class="col-12-weekday">Wed</div>
-              <div class="col-12-weekday">
-                <span class="icon rain">🌧</span>
-                <span class="wed-temp"> 14℃/5℃</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4">
-            <div class="row">
-              <div class="col-12-weekday">Thu</div>
-              <div class="col-12-weekday">
-                <span class="icon thunderstorm">🌩</span>
-                <span class="wed-temp"> 12℃/5℃</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4">
-            <div class="row">
-              <div class="col-12-weekday">Fri</div>
-              <div class="col-12-weekday">
-                <span class="icon sun-behind">🌤</span>
-                <span class="wed-temp"> 11℃/8℃</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4">
-            <div class="row">
-              <div class="col-12-weekday">Sat</div>
-              <div class="col-12-weekday">
-                <span class="icon rain-thunderstorm">⛈</span>
-                <span class="wed-temp"> 16℃/7℃</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4">
-            <div class="row">
-              <div class="col-12-weekday">Sun</div>
-              <div class="col-12-weekday">
-                <span class="icon semi-rainy">🌦</span>
-                <span class="wed-temp"> 18℃/5℃</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4">
-            <div class="row">
-              <div class="col-12-weekday">Mon</div>
-              <div class="col-12-weekday">
-                <span class="icon suny">☀</span>
-                <span class="wed-temp"> 11℃/8℃</span>
+              <div class="col-4 d-flex justify-content-end weather-temp">
+                <strong id="temperature"></strong
+                ><span class="units"
+                  ><a href="#" class="active" id="celsius-link">°C</a> |
+                  <a href="#" id="fahrenheit-link">°F</a></span
+                >
               </div>
             </div>
           </div>
         </div>
+
+        <div class="row next-days third-box"></div>
+
+        <small id="footer"
+          ><a href="https://github.com/ElnazAmia/weather-app" target="_blank"
+            >Open-source code</a
+          >, by Elnaz Amia</small
+        >
       </div>
-      <small
-        ><a href="https://github.com/ElnazAmia/weather-app" target="_blank"
-          >Open-source code</a
-        >, by Elnaz Amia</small
-      >
     </div>
-    <!-- </div> -->
+
     <script src="src/index.js"></script>
   </body>
 </html>
