@@ -37,14 +37,14 @@
                   />
                 </div>
 
-                <div class="col-lg-3">
+                <div class="col-xs-12 col-lg-3">
                   <input
                     type="submit"
                     value="Search"
                     class="form-control btn btn-primary shadow-sm w-100"
                   />
                 </div>
-                <div class="col-lg-3">
+                <div class="col-xs-12 col-lg-3">
                   <button
                     class="btn btn-success w-100"
                     id="current-location-button"
@@ -55,7 +55,7 @@
               </div>
             </form>
             <div class="row d-flex justify-content-between" id="search-details">
-              <div class="col-lg-4 overview" id="leftbar-info">
+              <div class="col-xs-12 col-lg-4 overview" id="leftbar-info">
                 <h1 id="searchedCity"></h1>
                 <ul>
                   <li><span id="date"></span></li>
@@ -64,17 +64,19 @@
                 </ul>
               </div>
               <div
-                class="col-lg-4 d-flex justify-content-center flex-column weather-description"
+                class="col-xs-12 col-lg-4 d-flex justify-content-center flex-column weather-description"
               >
                 <img
                   src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
                   alt=""
                   id="icon"
-                  class=""
+                  class="img-responsive"
                 />
                 <div class="" id="description"></div>
               </div>
-              <div class="col-lg-4 d-flex justify-content-end weather-temp">
+              <div
+                class="col-xs-12 col-lg-4 d-flex justify-content-end weather-temp"
+              >
                 <strong id="temperature"></strong
                 ><span class="units"
                   ><a href="#" class="active" id="celsius-link">°C</a> |
@@ -84,22 +86,7 @@
             </div>
           </div>
         </div>
-        <div class="weather-forecast">
-          <div class="row third-box">
-            <div class="col-2">
-              <div class="weather-forecast-date">Thu</div>
-              <img
-                src="http://openweathermap.org/img/wn/50d@2x.png"
-                alt=""
-                width="42"
-              />
-              <div class="weather-forecast-temperatures">
-                <span class="weather-forecast-temperature-max"> 18° </span>
-                <span class="weather-forecast-temperature-min"> 12° </span>
-              </div>
-            </div>
-          </div>
-        </div>
+        <div class="weather-forecast" id="forecast"></div>
 
         <small id="footer"
           ><a href="https://github.com/ElnazAmia/weather-app" target="_blank"

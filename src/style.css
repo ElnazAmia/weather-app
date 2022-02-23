@@ -46,12 +46,14 @@ li:first-letter {
 #temperature {
   font-size: 88px;
 }
+
 .container {
-  margin: 50px auto;
-  width: 50%;
+  margin: 30px auto;
 }
+
 .wrapper {
   margin: 30px auto;
+  max-width: 800px;
 }
 .units {
   position: relative;
@@ -69,8 +71,8 @@ li:first-letter {
   top: 10px;
   left: 10px;
   justify-content: center;
-  height: 180px;
-  width: 180px;
+  /* height: 180px;
+  width: 180px; */
 }
 #description {
   font-size: 24px;
@@ -103,8 +105,7 @@ li:first-letter {
 }
 
 .first-box,
-.second-box,
-.third-box {
+.second-box {
   border: 1px solid lightgray;
   padding: 15px;
   /* text-align: center; */
@@ -126,7 +127,18 @@ li:first-letter {
 .col-12-weekday {
   font-size: 22px;
 }
+.weather-forecast-date {
+  font-size: 16px;
+  opacity: 0.5;
+}
 
+.weather-forecast-temperature-min {
+  opacity: 0.5;
+}
+
+.weather-forecast-temperatures {
+  font-size: 13px;
+}
 a {
   text-decoration: none;
 }
