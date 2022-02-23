@@ -55,7 +55,7 @@
               </div>
             </form>
             <div class="row d-flex justify-content-between" id="search-details">
-              <div class="col-4 overview" id="leftbar-info">
+              <div class="col-lg-4 overview" id="leftbar-info">
                 <h1 id="searchedCity"></h1>
                 <ul>
                   <li><span id="date"></span></li>
@@ -64,7 +64,7 @@
                 </ul>
               </div>
               <div
-                class="col-4 d-flex justify-content-center flex-column weather-description"
+                class="col-lg-4 d-flex justify-content-center flex-column weather-description"
               >
                 <img
                   src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
@@ -74,7 +74,7 @@
                 />
                 <div class="" id="description"></div>
               </div>
-              <div class="col-4 d-flex justify-content-end weather-temp">
+              <div class="col-lg-4 d-flex justify-content-end weather-temp">
                 <strong id="temperature"></strong
                 ><span class="units"
                   ><a href="#" class="active" id="celsius-link">°C</a> |
@@ -84,8 +84,22 @@
             </div>
           </div>
         </div>
-
-        <div class="row next-days third-box"></div>
+        <div class="weather-forecast">
+          <div class="row third-box">
+            <div class="col-2">
+              <div class="weather-forecast-date">Thu</div>
+              <img
+                src="http://openweathermap.org/img/wn/50d@2x.png"
+                alt=""
+                width="42"
+              />
+              <div class="weather-forecast-temperatures">
+                <span class="weather-forecast-temperature-max"> 18° </span>
+                <span class="weather-forecast-temperature-min"> 12° </span>
+              </div>
+            </div>
+          </div>
+        </div>
 
         <small id="footer"
           ><a href="https://github.com/ElnazAmia/weather-app" target="_blank"
